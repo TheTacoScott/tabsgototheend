@@ -1,0 +1,11 @@
+{
+    "manifest_version": 2,
+    "name": "New Tabs Go To The End",
+    "version": "1.0",
+    "description": "Makes new tabs go to the end of the tab bar.",
+    "permissions": [ "tabs",  "http://*/*", "https://*/*" ],
+    "background": {
+      "scripts" : ["tabsgototheend.js"],
+      "persistent": false
+    }
+}
