@@ -28,11 +28,11 @@ chrome.tabs.onRemoved.addListener(function (tabId, removeInfo)
 
     if (tabs.length > TabThatMatters) 
     {
-      chrome.tabs.update(tabs[TabThatMatters].id, { selected: true });
+      chrome.tabs.update(tabs[TabThatMatters].id, { highlighted: true,active: true });
     }
     else 
     {
-      chrome.tabs.update(tabs[tabs.length - 1].id, { selected: true });
+      chrome.tabs.update(tabs[tabs.length - 1].id, { highlighted: true,active: true });
     }
   });
 });
